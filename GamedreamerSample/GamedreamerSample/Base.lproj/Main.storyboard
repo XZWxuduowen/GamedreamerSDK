@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--游戏开始页面-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mOL-e1-3Jl">
+                                <rect key="frame" x="97.5" y="253.5" width="180" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Bh-nd-Afv">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="40"/>
+                                        <state key="normal" title="切换伺服器">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeServerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RR8-Oz-KBt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mad-d8-byE">
+                                        <rect key="frame" x="0.0" y="60" width="180" height="40"/>
+                                        <state key="normal" title="进入游戏（必接）">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="goGameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5qc-A5-HBv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKo-T1-6Jl">
+                                        <rect key="frame" x="0.0" y="120" width="180" height="40"/>
+                                        <state key="normal" title="切换帐号">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeAccountAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PR4-GZ-S30"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Cbk-hR-vXT"/>
+                                    <constraint firstItem="CKo-T1-6Jl" firstAttribute="height" secondItem="Mad-d8-byE" secondAttribute="height" id="PA2-GC-l4X"/>
+                                    <constraint firstItem="4Bh-nd-Afv" firstAttribute="height" secondItem="Mad-d8-byE" secondAttribute="height" id="QTk-So-UcU"/>
+                                    <constraint firstAttribute="height" constant="160" id="wdu-Lf-G0N"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="hwm-dp-F7V">
+                                <rect key="frame" x="60" y="100.5" width="255" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypy-QF-gD3">
+                                        <rect key="frame" x="81" y="0.0" width="93.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ServerCode:1001 ,UserID:123456" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYM-6N-BIv">
+                                        <rect key="frame" x="0.0" y="45.5" width="255" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mOL-e1-3Jl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7fl-9Q-V5L"/>
+                            <constraint firstItem="mOL-e1-3Jl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FwA-cU-xQE"/>
+                            <constraint firstItem="hwm-dp-F7V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XNW-Q6-MId"/>
+                            <constraint firstItem="hwm-dp-F7V" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.4" id="wEg-i7-gEl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="游戏开始页面" id="95W-kc-FBq"/>
+                    <connections>
+                        <outlet property="gameButton" destination="Mad-d8-byE" id="p93-5v-h62"/>
+                        <outlet property="infoLabel" destination="oYM-6N-BIv" id="Fof-Xi-SDZ"/>
+                        <outlet property="loginButton" destination="CKo-T1-6Jl" id="i23-Nx-ENx"/>
+                        <outlet property="serverButotn" destination="4Bh-nd-Afv" id="Sj9-5m-idg"/>
+                        <segue destination="6bB-yw-I2d" kind="show" identifier="goGame" id="1DX-uz-Jjw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="124.58770614692655"/>
+        </scene>
+        <!--角色页面-->
+        <scene sceneID="QGd-7F-8bk">
+            <objects>
+                <viewController title="角色页面" id="6bB-yw-I2d" customClass="RoleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mbq-wW-QZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PdQ-kb-nU8">
+                                <rect key="frame" x="27.5" y="224" width="320" height="213"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="2aQ-mV-YcE">
+                                <rect key="frame" x="37.5" y="234" width="300" height="79.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="创建新角色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OL1-gE-a8B">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="leu-h1-FRG">
+                                        <rect key="frame" x="0.0" y="39.5" width="300" height="40"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="新角色名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BrN-i7-bBz">
+                                                <rect key="frame" x="0.0" y="5" width="201.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONK-GI-I5H">
+                                                <rect key="frame" x="213.5" y="3" width="86.5" height="34"/>
+                                                <state key="normal" title="确认">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="newRoleAction:" destination="6bB-yw-I2d" eventType="touchUpInside" id="27X-67-909"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Gg9-t0-Aei"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BrN-i7-bBz" firstAttribute="width" secondItem="OL1-gE-a8B" secondAttribute="width" multiplier="0.7" id="7Gw-bz-DVG"/>
+                                    <constraint firstItem="ONK-GI-I5H" firstAttribute="width" secondItem="OL1-gE-a8B" secondAttribute="width" multiplier="0.3" id="LU4-a8-SYd"/>
+                                    <constraint firstItem="leu-h1-FRG" firstAttribute="width" secondItem="2aQ-mV-YcE" secondAttribute="width" id="gnP-4x-k5V"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="SRr-Gp-DPl">
+                                <rect key="frame" x="37.5" y="353.5" width="300" height="73.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用已有角色登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lp-hj-jme">
+                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnD-9C-bHq">
+                                        <rect key="frame" x="0.0" y="39.5" width="135" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="H8v-a7-gPi"/>
+                                        </constraints>
+                                        <state key="normal" title="Demo">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="oldRoleAction:" destination="6bB-yw-I2d" eventType="touchUpInside" id="TVR-eS-Jr1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="QnD-9C-bHq" firstAttribute="width" secondItem="SRr-Gp-DPl" secondAttribute="width" multiplier="0.45" id="8B3-Fz-UFr"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Avi-Ny-La7" userLabel="title">
+                                <rect key="frame" x="60" y="100.5" width="255" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="角色选择页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQm-mb-221">
+                                        <rect key="frame" x="57.5" y="0.0" width="140" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ServerCode:1001 ,UserID:123456" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVl-Bs-KbZ">
+                                        <rect key="frame" x="0.0" y="45.5" width="255" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2aQ-mV-YcE" firstAttribute="bottom" secondItem="Mbq-wW-QZJ" secondAttribute="centerY" constant="-20" id="0Ms-e6-2jt"/>
+                            <constraint firstItem="Avi-Ny-La7" firstAttribute="centerX" secondItem="Mbq-wW-QZJ" secondAttribute="centerX" id="4CJ-Tn-N5l"/>
+                            <constraint firstItem="SRr-Gp-DPl" firstAttribute="top" secondItem="Mbq-wW-QZJ" secondAttribute="centerY" constant="20" id="9w5-wG-f3A"/>
+                            <constraint firstItem="PdQ-kb-nU8" firstAttribute="leading" secondItem="2aQ-mV-YcE" secondAttribute="leading" constant="-10" id="A3Y-pw-Pgp"/>
+                            <constraint firstItem="SRr-Gp-DPl" firstAttribute="centerX" secondItem="Mbq-wW-QZJ" secondAttribute="centerX" id="A5w-eS-3zc"/>
+                            <constraint firstItem="PdQ-kb-nU8" firstAttribute="bottom" secondItem="SRr-Gp-DPl" secondAttribute="bottom" constant="10" id="Hou-iK-b2b"/>
+                            <constraint firstItem="PdQ-kb-nU8" firstAttribute="trailing" secondItem="2aQ-mV-YcE" secondAttribute="trailing" constant="10" id="L8t-ts-9sn"/>
+                            <constraint firstItem="PdQ-kb-nU8" firstAttribute="top" secondItem="2aQ-mV-YcE" secondAttribute="top" constant="-10" id="Nv3-gR-Vrb"/>
+                            <constraint firstItem="Avi-Ny-La7" firstAttribute="centerY" secondItem="Mbq-wW-QZJ" secondAttribute="centerY" multiplier="0.4" id="eUH-24-iEu"/>
+                            <constraint firstItem="2aQ-mV-YcE" firstAttribute="centerX" secondItem="Mbq-wW-QZJ" secondAttribute="centerX" id="gzV-k3-vEo"/>
+                            <constraint firstItem="SRr-Gp-DPl" firstAttribute="width" secondItem="Mbq-wW-QZJ" secondAttribute="width" multiplier="0.8" id="p2I-9O-Vew"/>
+                            <constraint firstItem="2aQ-mV-YcE" firstAttribute="width" secondItem="Mbq-wW-QZJ" secondAttribute="width" multiplier="0.8" id="vtP-Hq-ReW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wo2-hP-Mvv"/>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="YVl-Bs-KbZ" id="NmD-Pl-8O3"/>
+                        <outlet property="textField" destination="BrN-i7-bBz" id="ei6-xa-nUO"/>
+                        <segue destination="0E5-Gj-tQG" kind="show" identifier="beginGame" id="hXE-yD-Wqf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Sb-v4-Bgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1904.8" y="124.58770614692655"/>
+        </scene>
+        <!--游戏页面-->
+        <scene sceneID="pLP-zc-T48">
+            <objects>
+                <viewController title="游戏页面" id="0E5-Gj-tQG" customClass="GameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XH3-Ed-G4f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="BEv-Au-zac">
+                                <rect key="frame" x="20" y="183.5" width="335" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="LeL-wF-i4w">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfm-vK-0yf">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="c35-pv-ifG"/>
+                                                    <constraint firstAttribute="height" constant="40" id="wmN-q6-NRI"/>
+                                                </constraints>
+                                                <state key="normal" title="储值（游戏按钮）">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="gamePay:" destination="0E5-Gj-tQG" eventType="touchUpInside" id="ZUT-fE-Mja"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyk-fX-6LF">
+                                                <rect key="frame" x="175" y="0.0" width="160" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="4Oe-Kb-g9v"/>
+                                                    <constraint firstAttribute="height" constant="40" id="CdK-Fq-5yZ"/>
+                                                </constraints>
+                                                <state key="normal" title="储值（SDK 页面）">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="GDSDKPay:" destination="0E5-Gj-tQG" eventType="touchUpInside" id="Qp2-zC-Mlc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1Gw-Az-aip">
+                                        <rect key="frame" x="0.0" y="65" width="335" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2DU-Yd-FHS">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="NyP-3O-idr"/>
+                                                    <constraint firstAttribute="width" constant="160" id="byl-io-Vve"/>
+                                                </constraints>
+                                                <state key="normal" title="用户中心（必接）">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="memberCenter:" destination="0E5-Gj-tQG" eventType="touchUpInside" id="yl9-Gd-eqh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi5-Pc-5kb">
+                                                <rect key="frame" x="175" y="0.0" width="160" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="ir2-jj-gLq"/>
+                                                    <constraint firstAttribute="width" constant="160" id="rmC-Kz-Zce"/>
+                                                </constraints>
+                                                <state key="normal" title="客服">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cs:" destination="0E5-Gj-tQG" eventType="touchUpInside" id="HJe-a3-GK3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTk-7K-JOJ">
+                                        <rect key="frame" x="0.0" y="130" width="160" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="Ktw-Ra-hGc"/>
+                                            <constraint firstAttribute="height" constant="40" id="SfH-yO-lGj"/>
+                                        </constraints>
+                                        <state key="normal" title="分享">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="shareAction:" destination="0E5-Gj-tQG" eventType="touchUpInside" id="Jh5-CU-y4C"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7H-Hr-oDp">
+                                        <rect key="frame" x="0.0" y="195" width="160" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="O2F-Ta-9aD"/>
+                                            <constraint firstAttribute="width" constant="160" id="wqQ-uf-PpJ"/>
+                                        </constraints>
+                                        <state key="normal" title="事件记录">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="LogEventSample:" destination="0E5-Gj-tQG" eventType="touchUpInside" id="yFY-Yu-2f1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0t-b0-sYA">
+                                        <rect key="frame" x="0.0" y="260" width="160" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="3AN-dg-dIt"/>
+                                            <constraint firstAttribute="height" constant="40" id="94K-Dt-l6y"/>
+                                        </constraints>
+                                        <state key="normal" title="商店评分">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="appScore:" destination="0E5-Gj-tQG" eventType="touchUpInside" id="WkY-4n-ueY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="3lI-rd-Js9">
+                                <rect key="frame" x="60" y="100.5" width="255" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="游戏内页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvj-yI-ti0">
+                                        <rect key="frame" x="69.5" y="0.0" width="116.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ServerCode:1001 ,UserID:123456" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDW-QO-nN2">
+                                        <rect key="frame" x="0.0" y="45.5" width="255" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BEv-Au-zac" firstAttribute="centerY" secondItem="XH3-Ed-G4f" secondAttribute="centerY" id="5Sb-JN-Pbe"/>
+                            <constraint firstItem="3lI-rd-Js9" firstAttribute="centerX" secondItem="XH3-Ed-G4f" secondAttribute="centerX" id="cl8-E8-S4v"/>
+                            <constraint firstItem="BEv-Au-zac" firstAttribute="centerX" secondItem="XH3-Ed-G4f" secondAttribute="centerX" id="nTG-Ac-U5G"/>
+                            <constraint firstItem="3lI-rd-Js9" firstAttribute="centerY" secondItem="XH3-Ed-G4f" secondAttribute="centerY" multiplier="0.4" id="urQ-2S-LhV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DPY-d3-tqZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="CDW-QO-nN2" id="jB1-c5-8qj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ze-iN-xOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2748" y="125"/>
+        </scene>
+    </scenes>
+</document>

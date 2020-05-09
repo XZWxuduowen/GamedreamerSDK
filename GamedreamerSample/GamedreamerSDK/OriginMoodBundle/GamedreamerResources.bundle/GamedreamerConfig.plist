@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppsFlyerDevKey</key>
+	<string>8oSuzS62sRTR5jDYBCzwMC</string>
+	<key>FireBase</key>
+	<false/>
+	<key>WithoutServer</key>
+	<false/>
+	<key>SDKVersion</key>
+	<string>1</string>
+	<key>GameCode</key>
+	<string>MXTW</string>
+	<key>AppStoreID</key>
+	<string>1321759251</string>
+	<key>SDKArea</key>
+	<string>OriginMood</string>
+	<key>Comefrom</key>
+	<string>ios</string>
+	<key>Platform</key>
+	<string>Apple</string>
+	<key>Email</key>
+	<array>
+		<dict>
+			<key>area</key>
+			<string>OriginMood</string>
+			<key>address</key>
+			<string>cs@originmood.com</string>
+		</dict>
+	</array>
+</dict>
+</plist>

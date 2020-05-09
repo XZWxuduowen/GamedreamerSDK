@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>509332682276-gufps7eokpbibquoluq7sarmk8kjh70p.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.509332682276-gufps7eokpbibquoluq7sarmk8kjh70p</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA7N8GGCR2yVemoQWPRJ9a7RNagp5mV_-U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>509332682276</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.gamedreamer.sangz</string>
+	<key>PROJECT_ID</key>
+	<string>sangz-ed5fa</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sangz-ed5fa.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:509332682276:ios:8e772aa0182b0144</string>
+	<key>DATABASE_URL</key>
+	<string>https://sangz-ed5fa.firebaseio.com</string>
+</dict>
+</plist>
