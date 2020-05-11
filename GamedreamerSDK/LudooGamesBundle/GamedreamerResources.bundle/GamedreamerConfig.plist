@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ACTConversionReporter</key>
+	<dict>
+		<key>reportWithConversionID</key>
+		<string>123</string>
+		<key>label</key>
+		<string>123</string>
+		<key>value</key>
+		<string>123</string>
+	</dict>
+	<key>Chartboost</key>
+	<dict>
+		<key>startWithAppId</key>
+		<string>123</string>
+		<key>appSignature</key>
+		<string>123</string>
+	</dict>
+	<key>AppsFlyerDevKey</key>
+	<string>8oSuzS62sRTR5jDYBCzwMC</string>
+	<key>WithoutServer</key>
+	<false/>
+	<key>FireBase</key>
+	<true/>
+	<key>SDKVersion</key>
+	<string>1</string>
+	<key>GameCode</key>
+	<string>TKZM</string>
+	<key>AppStoreID</key>
+	<string>1390432569</string>
+	<key>SDKArea</key>
+	<string>Ludoo</string>
+	<key>Comefrom</key>
+	<string>ios</string>
+	<key>Platform</key>
+	<string>Apple</string>
+	<key>Email</key>
+	<array>
+		<dict>
+			<key>area</key>
+			<string>中文</string>
+			<key>address</key>
+			<string>cs@gamedreamer.com.tw</string>
+		</dict>
+		<dict>
+			<key>area</key>
+			<string>英文</string>
+			<key>address</key>
+			<string>service@gamedreamer.com.tw</string>
+		</dict>
+		<dict>
+			<key>area</key>
+			<string>印尼</string>
+			<key>address</key>
+			<string>service-id@gamedreamer.com.tw</string>
+		</dict>
+	</array>
+</dict>
+</plist>
