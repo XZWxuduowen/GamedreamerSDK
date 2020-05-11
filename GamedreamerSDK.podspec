@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GamedreamerSDK"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "GamedreamerSDK"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
 
 # , :tag => "#{spec.version}"
 # , :commit => "68defea" 
-  spec.source       = { :git => "https://github.com/XZWxuduowen/GamedreamerSDK.git", :tag => "1.0.2"}
+  spec.source       = { :git => "https://github.com/XZWxuduowen/GamedreamerSDK.git", :tag => "1.0.3"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
