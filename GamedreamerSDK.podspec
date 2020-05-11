@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "GamedreamerSDK."
 
-  spec.homepage     = "https://github.com/XZWxuduowen/GamedreamerSDK"
+  spec.homepage     = "https://github.com/XZWxuduowen/GamedreamerSDK.git"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
 
 # , :tag => "#{spec.version}"
 # , :commit => "68defea" 
-  spec.source       = { :git => "https://github.com/XZWxuduowen/GamedreamerSDK.git", :tag => "#{spec.version}"}
+  spec.source       = { :git => "https://github.com/XZWxuduowen/GamedreamerSDK.git", :tag => "1.0.2"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "GamedreamerSDK"
+  spec.source_files  = "GamedreamerSDK/*"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
