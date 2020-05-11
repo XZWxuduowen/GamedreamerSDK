@@ -1,6 +1,0 @@
-framework module Gamedreamer {
-  umbrella header "Gamedreamer.h"
-
-  export *
-  module * { export * }
-}

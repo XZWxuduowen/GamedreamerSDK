@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GamedreamerSDK"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "GamedreamerSDK"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
 
 # , :tag => "#{spec.version}"
 # , :commit => "68defea" 
-  spec.source       = { :git => "https://github.com/XZWxuduowen/GamedreamerSDK.git", :tag => "1.0.3"}
+  spec.source       = { :git => "https://github.com/XZWxuduowen/GamedreamerSDK.git", :tag => "1.0.4"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "GamedreamerSDK/*"
+  spec.source_files  = "GamedreamerSample/GamedreamerSDK/*"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
