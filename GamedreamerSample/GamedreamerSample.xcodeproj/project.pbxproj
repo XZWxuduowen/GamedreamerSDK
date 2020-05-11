@@ -15,8 +15,6 @@
 		66C78D99221A8A44008C8B89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C78D98221A8A44008C8B89 /* main.m */; };
 		66C78DA3221A8A71008C8B89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66C78DA0221A8A71008C8B89 /* GoogleService-Info.plist */; };
 		66C78DA4221A8A71008C8B89 /* GamedreamerResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 66C78DA1221A8A71008C8B89 /* GamedreamerResources.bundle */; };
-		66C78DA5221A8A71008C8B89 /* Gamedreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C78DA2221A8A71008C8B89 /* Gamedreamer.framework */; };
-		66C78DA6221A8A7C008C8B89 /* Gamedreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C78DA2221A8A71008C8B89 /* Gamedreamer.framework */; };
 		66C78DA7221A8A7C008C8B89 /* Gamedreamer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66C78DA2221A8A71008C8B89 /* Gamedreamer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		66C78DAB221BB5E1008C8B89 /* RoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C78DAA221BB5E1008C8B89 /* RoleViewController.m */; };
 		66C78DAE221BD7ED008C8B89 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C78DAD221BD7ED008C8B89 /* GameViewController.m */; };
@@ -65,8 +63,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				80CCEE60244EE4CC00166C77 /* Accelerate.framework in Frameworks */,
-				66C78DA5221A8A71008C8B89 /* Gamedreamer.framework in Frameworks */,
-				66C78DA6221A8A7C008C8B89 /* Gamedreamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

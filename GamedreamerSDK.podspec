@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GamedreamerSDK"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "GamedreamerSDK"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
 
 # , :tag => "#{spec.version}"
 # , :commit => "68defea" 
-  spec.source       = { :git => "https://github.com/XZWxuduowen/GamedreamerSDK.git", :tag => "1.0.4"}
+  spec.source       = { :git => "https://github.com/XZWxuduowen/GamedreamerSDK.git", :tag => "1.0.5"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "GamedreamerSample/GamedreamerSDK/*"
-  # spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "GamedreamerSample/*"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -109,6 +108,7 @@ Pod::Spec.new do |spec|
   # spec.resources = "Resources/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
+  spec.resource = "GamedreamerSample/GamedreamerSDK/*.bundle"
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -119,6 +119,9 @@ Pod::Spec.new do |spec|
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
+  
+  # 依赖的系统库
+  spec.frameworks = "Accelerate"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
