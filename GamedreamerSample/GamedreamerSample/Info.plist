@@ -4,10 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleDisplayName</key>
 	<string>{{gamename}}</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
 	<string>{{bundleid}}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -18,14 +18,14 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0.0</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>fbauth2</string>
-		<string>fbapi</string>
-		<string>fbshareextension</string>
-		<string>lineauth</string>
-		<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-	</array>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbauth2</string>
+        <string>fbapi</string>
+        <string>fbshareextension</string>
+        <string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+        <string>lineauth</string>
+    </array>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -78,6 +78,11 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict/>
+		<dict/>
 	</array>
 </dict>
 </plist>

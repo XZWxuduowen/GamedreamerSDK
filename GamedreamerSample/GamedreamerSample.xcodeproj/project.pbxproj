@@ -7,35 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		662B65E822CEF181006FD6B0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 662B65E722CEF181006FD6B0 /* libz.tbd */; };
+		662B662322CF3DFE006FD6B0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 662B662222CF3DFE006FD6B0 /* libc++.tbd */; };
 		66C78D8B221A8A41008C8B89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C78D8A221A8A41008C8B89 /* AppDelegate.m */; };
 		66C78D8E221A8A41008C8B89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C78D8D221A8A41008C8B89 /* ViewController.m */; };
 		66C78D91221A8A41008C8B89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C78D8F221A8A41008C8B89 /* Main.storyboard */; };
 		66C78D93221A8A44008C8B89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C78D92221A8A44008C8B89 /* Assets.xcassets */; };
 		66C78D96221A8A44008C8B89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C78D94221A8A44008C8B89 /* LaunchScreen.storyboard */; };
 		66C78D99221A8A44008C8B89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C78D98221A8A44008C8B89 /* main.m */; };
-		66C78DA3221A8A71008C8B89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66C78DA0221A8A71008C8B89 /* GoogleService-Info.plist */; };
-		66C78DA4221A8A71008C8B89 /* GamedreamerResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 66C78DA1221A8A71008C8B89 /* GamedreamerResources.bundle */; };
-		66C78DA7221A8A7C008C8B89 /* Gamedreamer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66C78DA2221A8A71008C8B89 /* Gamedreamer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		66C78DAB221BB5E1008C8B89 /* RoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C78DAA221BB5E1008C8B89 /* RoleViewController.m */; };
 		66C78DAE221BD7ED008C8B89 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C78DAD221BD7ED008C8B89 /* GameViewController.m */; };
-		80CCEE60244EE4CC00166C77 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CCEE5F244EE4CC00166C77 /* Accelerate.framework */; };
+		7A69B7682372BD8D0090131E /* GamedreamerResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A69B74F2372BD8B0090131E /* GamedreamerResources.bundle */; };
+		7A69B7692372BD8D0090131E /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7502372BD8B0090131E /* FirebaseCoreDiagnostics.framework */; };
+		7A69B76A2372BD8D0090131E /* GoogleDataTransportCCTSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7512372BD8B0090131E /* GoogleDataTransportCCTSupport.framework */; };
+		7A69B76B2372BD8D0090131E /* FirebaseABTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7522372BD8C0090131E /* FirebaseABTesting.framework */; };
+		7A69B76C2372BD8D0090131E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7532372BD8C0090131E /* FBSDKLoginKit.framework */; };
+		7A69B76D2372BD8D0090131E /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7542372BD8C0090131E /* FirebaseInstanceID.framework */; };
+		7A69B76E2372BD8D0090131E /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7552372BD8C0090131E /* GoogleAppMeasurement.framework */; };
+		7A69B76F2372BD8D0090131E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7562372BD8C0090131E /* FBSDKCoreKit.framework */; };
+		7A69B7712372BD8D0090131E /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7582372BD8C0090131E /* LineSDK.framework */; };
+		7A69B7722372BD8D0090131E /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7592372BD8C0090131E /* GoogleSymbolUtilities.framework */; };
+		7A69B7732372BD8D0090131E /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B75A2372BD8C0090131E /* FirebaseAnalytics.framework */; };
+		7A69B7742372BD8D0090131E /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B75B2372BD8C0090131E /* Protobuf.framework */; };
+		7A69B7752372BD8D0090131E /* GoogleDataTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B75C2372BD8C0090131E /* GoogleDataTransport.framework */; };
+		7A69B7762372BD8D0090131E /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A69B75D2372BD8C0090131E /* FacebookSDKStrings.bundle */; };
+		7A69B7772372BD8D0090131E /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B75E2372BD8C0090131E /* FirebaseCore.framework */; };
+		7A69B7782372BD8D0090131E /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B75F2372BD8C0090131E /* GoogleUtilities.framework */; };
+		7A69B7792372BD8D0090131E /* FirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7602372BD8C0090131E /* FirebaseRemoteConfig.framework */; };
+		7A69B77A2372BD8D0090131E /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7612372BD8C0090131E /* FIRAnalyticsConnector.framework */; };
+		7A69B77B2372BD8D0090131E /* Gamedreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7622372BD8C0090131E /* Gamedreamer.framework */; };
+		7A69B77C2372BD8D0090131E /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7632372BD8C0090131E /* AppsFlyerLib.framework */; };
+		7A69B77D2372BD8D0090131E /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7642372BD8C0090131E /* nanopb.framework */; };
+		7A69B77E2372BD8D0090131E /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7652372BD8C0090131E /* GoogleInterchangeUtilities.framework */; };
+		7A69B77F2372BD8D0090131E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A69B7662372BD8C0090131E /* FBSDKShareKit.framework */; };
+		7A69B7802372BD8D0090131E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A69B7672372BD8D0090131E /* GoogleService-Info.plist */; };
+		80CCEE5D244EE47B00166C77 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CCEE5C244EE47B00166C77 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		66C78DA8221A8A7C008C8B89 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				66C78DA7221A8A7C008C8B89 /* Gamedreamer.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		662B65E722CEF181006FD6B0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		662B662222CF3DFE006FD6B0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		66306E8E2254997500E50ECC /* GamedreamerSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GamedreamerSample.entitlements; sourceTree = "<group>"; };
 		66C78D86221A8A41008C8B89 /* GamedreamerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamedreamerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C78D89221A8A41008C8B89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,14 +58,35 @@
 		66C78D95221A8A44008C8B89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66C78D97221A8A44008C8B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66C78D98221A8A44008C8B89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		66C78DA0221A8A71008C8B89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		66C78DA1221A8A71008C8B89 /* GamedreamerResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GamedreamerResources.bundle; sourceTree = "<group>"; };
-		66C78DA2221A8A71008C8B89 /* Gamedreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gamedreamer.framework; sourceTree = "<group>"; };
 		66C78DA9221BB5E1008C8B89 /* RoleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoleViewController.h; sourceTree = "<group>"; };
 		66C78DAA221BB5E1008C8B89 /* RoleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoleViewController.m; sourceTree = "<group>"; };
 		66C78DAC221BD7ED008C8B89 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		66C78DAD221BD7ED008C8B89 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		80CCEE5F244EE4CC00166C77 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7A69B74F2372BD8B0090131E /* GamedreamerResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GamedreamerResources.bundle; sourceTree = "<group>"; };
+		7A69B7502372BD8B0090131E /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		7A69B7512372BD8B0090131E /* GoogleDataTransportCCTSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleDataTransportCCTSupport.framework; sourceTree = "<group>"; };
+		7A69B7522372BD8C0090131E /* FirebaseABTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseABTesting.framework; sourceTree = "<group>"; };
+		7A69B7532372BD8C0090131E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7A69B7542372BD8C0090131E /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		7A69B7552372BD8C0090131E /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		7A69B7562372BD8C0090131E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		7A69B7582372BD8C0090131E /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineSDK.framework; sourceTree = "<group>"; };
+		7A69B7592372BD8C0090131E /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		7A69B75A2372BD8C0090131E /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		7A69B75B2372BD8C0090131E /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Protobuf.framework; sourceTree = "<group>"; };
+		7A69B75C2372BD8C0090131E /* GoogleDataTransport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleDataTransport.framework; sourceTree = "<group>"; };
+		7A69B75D2372BD8C0090131E /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKStrings.bundle; sourceTree = "<group>"; };
+		7A69B75E2372BD8C0090131E /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		7A69B75F2372BD8C0090131E /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		7A69B7602372BD8C0090131E /* FirebaseRemoteConfig.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseRemoteConfig.framework; sourceTree = "<group>"; };
+		7A69B7612372BD8C0090131E /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
+		7A69B7622372BD8C0090131E /* Gamedreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gamedreamer.framework; sourceTree = "<group>"; };
+		7A69B7632372BD8C0090131E /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppsFlyerLib.framework; sourceTree = "<group>"; };
+		7A69B7642372BD8C0090131E /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		7A69B7652372BD8C0090131E /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		7A69B7662372BD8C0090131E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		7A69B7672372BD8D0090131E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		80CCEE5C244EE47B00166C77 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,19 +94,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80CCEE60244EE4CC00166C77 /* Accelerate.framework in Frameworks */,
+				80CCEE5D244EE47B00166C77 /* Accelerate.framework in Frameworks */,
+				7A69B7752372BD8D0090131E /* GoogleDataTransport.framework in Frameworks */,
+				7A69B76B2372BD8D0090131E /* FirebaseABTesting.framework in Frameworks */,
+				7A69B77D2372BD8D0090131E /* nanopb.framework in Frameworks */,
+				7A69B7692372BD8D0090131E /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				7A69B76C2372BD8D0090131E /* FBSDKLoginKit.framework in Frameworks */,
+				662B662322CF3DFE006FD6B0 /* libc++.tbd in Frameworks */,
+				7A69B76D2372BD8D0090131E /* FirebaseInstanceID.framework in Frameworks */,
+				7A69B77F2372BD8D0090131E /* FBSDKShareKit.framework in Frameworks */,
+				7A69B77C2372BD8D0090131E /* AppsFlyerLib.framework in Frameworks */,
+				7A69B77B2372BD8D0090131E /* Gamedreamer.framework in Frameworks */,
+				7A69B7722372BD8D0090131E /* GoogleSymbolUtilities.framework in Frameworks */,
+				7A69B7712372BD8D0090131E /* LineSDK.framework in Frameworks */,
+				7A69B76A2372BD8D0090131E /* GoogleDataTransportCCTSupport.framework in Frameworks */,
+				7A69B7742372BD8D0090131E /* Protobuf.framework in Frameworks */,
+				7A69B76E2372BD8D0090131E /* GoogleAppMeasurement.framework in Frameworks */,
+				7A69B7772372BD8D0090131E /* FirebaseCore.framework in Frameworks */,
+				7A69B77E2372BD8D0090131E /* GoogleInterchangeUtilities.framework in Frameworks */,
+				7A69B7782372BD8D0090131E /* GoogleUtilities.framework in Frameworks */,
+				7A69B76F2372BD8D0090131E /* FBSDKCoreKit.framework in Frameworks */,
+				7A69B7792372BD8D0090131E /* FirebaseRemoteConfig.framework in Frameworks */,
+				662B65E822CEF181006FD6B0 /* libz.tbd in Frameworks */,
+				7A69B7732372BD8D0090131E /* FirebaseAnalytics.framework in Frameworks */,
+				7A69B77A2372BD8D0090131E /* FIRAnalyticsConnector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6652445F229BF2860026F0FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80CCEE5C244EE47B00166C77 /* Accelerate.framework */,
+				662B662222CF3DFE006FD6B0 /* libc++.tbd */,
+				662B65E722CEF181006FD6B0 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		66C78D7D221A8A41008C8B89 = {
 			isa = PBXGroup;
 			children = (
 				66C78D88221A8A41008C8B89 /* GamedreamerSample */,
 				66C78D87221A8A41008C8B89 /* Products */,
-				80CCEE5E244EE4CC00166C77 /* Frameworks */,
+				6652445F229BF2860026F0FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,20 +176,33 @@
 		66C78D9F221A8A71008C8B89 /* GamedreamerSDK */ = {
 			isa = PBXGroup;
 			children = (
-				66C78DA0221A8A71008C8B89 /* GoogleService-Info.plist */,
-				66C78DA1221A8A71008C8B89 /* GamedreamerResources.bundle */,
-				66C78DA2221A8A71008C8B89 /* Gamedreamer.framework */,
+				7A69B7632372BD8C0090131E /* AppsFlyerLib.framework */,
+				7A69B75D2372BD8C0090131E /* FacebookSDKStrings.bundle */,
+				7A69B7562372BD8C0090131E /* FBSDKCoreKit.framework */,
+				7A69B7532372BD8C0090131E /* FBSDKLoginKit.framework */,
+				7A69B7662372BD8C0090131E /* FBSDKShareKit.framework */,
+				7A69B7612372BD8C0090131E /* FIRAnalyticsConnector.framework */,
+				7A69B7522372BD8C0090131E /* FirebaseABTesting.framework */,
+				7A69B75A2372BD8C0090131E /* FirebaseAnalytics.framework */,
+				7A69B75E2372BD8C0090131E /* FirebaseCore.framework */,
+				7A69B7502372BD8B0090131E /* FirebaseCoreDiagnostics.framework */,
+				7A69B7542372BD8C0090131E /* FirebaseInstanceID.framework */,
+				7A69B7602372BD8C0090131E /* FirebaseRemoteConfig.framework */,
+				7A69B7622372BD8C0090131E /* Gamedreamer.framework */,
+				7A69B74F2372BD8B0090131E /* GamedreamerResources.bundle */,
+				7A69B7552372BD8C0090131E /* GoogleAppMeasurement.framework */,
+				7A69B75C2372BD8C0090131E /* GoogleDataTransport.framework */,
+				7A69B7512372BD8B0090131E /* GoogleDataTransportCCTSupport.framework */,
+				7A69B7652372BD8C0090131E /* GoogleInterchangeUtilities.framework */,
+				7A69B7672372BD8D0090131E /* GoogleService-Info.plist */,
+				7A69B7592372BD8C0090131E /* GoogleSymbolUtilities.framework */,
+				7A69B75F2372BD8C0090131E /* GoogleUtilities.framework */,
+				7A69B7582372BD8C0090131E /* LineSDK.framework */,
+				7A69B7642372BD8C0090131E /* nanopb.framework */,
+				7A69B75B2372BD8C0090131E /* Protobuf.framework */,
 			);
 			path = GamedreamerSDK;
 			sourceTree = SOURCE_ROOT;
-		};
-		80CCEE5E244EE4CC00166C77 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				80CCEE5F244EE4CC00166C77 /* Accelerate.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -136,7 +214,6 @@
 				66C78D82221A8A41008C8B89 /* Sources */,
 				66C78D83221A8A41008C8B89 /* Frameworks */,
 				66C78D84221A8A41008C8B89 /* Resources */,
-				66C78DA8221A8A7C008C8B89 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,11 +266,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66C78DA4221A8A71008C8B89 /* GamedreamerResources.bundle in Resources */,
+				7A69B7682372BD8D0090131E /* GamedreamerResources.bundle in Resources */,
+				7A69B7762372BD8D0090131E /* FacebookSDKStrings.bundle in Resources */,
 				66C78D96221A8A44008C8B89 /* LaunchScreen.storyboard in Resources */,
-				66C78DA3221A8A71008C8B89 /* GoogleService-Info.plist in Resources */,
 				66C78D93221A8A44008C8B89 /* Assets.xcassets in Resources */,
 				66C78D91221A8A41008C8B89 /* Main.storyboard in Resources */,
+				7A69B7802372BD8D0090131E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +441,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -385,6 +464,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

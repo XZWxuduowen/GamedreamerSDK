@@ -2,27 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>FireBase</key>
-	<true/>
-	<key>FaceBookAppid</key>
-	<string>2345382852372854</string>
-	<key>LineSDKConfig</key>
-	<dict>
-		<key>ChannelID</key>
-		<string>1634576458</string>
-	</dict>
-	<key>BundleId</key>
-	<string>com.gamezoo.sanze</string>
 	<key>AppsFlyerDevKey</key>
-	<string>Xoea3ao4LbAxXAkyr3qjpP</string>
+	<string>8oSuzS62sRTR5jDYBCzwMC</string>
+	<key>FireBase</key>
+	<false/>
 	<key>WithoutServer</key>
-	<true/>
+	<false/>
 	<key>SDKVersion</key>
 	<string>1</string>
 	<key>GameCode</key>
-	<string>CQB</string>
+	<string>XWCSGD</string>
 	<key>AppStoreID</key>
-	<string>1453138796</string>
+	<string>1321759251</string>
 	<key>SDKArea</key>
 	<string>TW</string>
 	<key>Comefrom</key>
@@ -35,7 +26,19 @@
 			<key>area</key>
 			<string>中文</string>
 			<key>address</key>
-			<string>cs@gamedreamer.com</string>
+			<string>cs@gamedreamer.com.tw</string>
+		</dict>
+		<dict>
+			<key>area</key>
+			<string>英文</string>
+			<key>address</key>
+			<string>service@gamedreamer.com.tw</string>
+		</dict>
+		<dict>
+			<key>area</key>
+			<string>印尼</string>
+			<key>address</key>
+			<string>service-id@gamedreamer.com.tw</string>
 		</dict>
 	</array>
 </dict>
